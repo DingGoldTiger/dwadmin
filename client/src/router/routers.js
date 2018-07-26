@@ -1,5 +1,6 @@
 
-import HelloWorld from '@/components/HelloWorld'
+// import HelloWorld from '@/components/HelloWorld'
+import home from '@/pages/home'
 import index from '@/pages/index'
 
 const routers = [
@@ -8,11 +9,11 @@ const routers = [
     name: 'index',
     component: index
   }, {
-    path: '/test/:id',
-    name: 'HelloWorld',
-    component: HelloWorld,
+    path: '/home',
+    name: 'home',
+    component: home,
     props: true,
-    alias: '/b/:id'
+    alias: '/b'
   }
 ]
 
