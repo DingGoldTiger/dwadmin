@@ -96,7 +96,7 @@ export default {
     }
   },
   mounted () {
-    // this.test()
+    this.test()
     this.increment()
     console.log(this.id)
   },

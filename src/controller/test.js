@@ -1,7 +1,10 @@
 const Base = require('./base.js');
 
 module.exports = class extends Base {
-  indexAction() {
-    return this.success('2222');
+  async indexAction() {
+    const user = this.model('Persons')
+    const data = await user.select();
+    console.log(data)
+    return this.success(data);
   }
 };
